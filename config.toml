@@ -30,7 +30,7 @@ generate_feed = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-copyright = "CC BY 4.0"
+copyright = "CC BY-SA 4.0"
 
 # taxonomies = [
 #     {name = "tags", feed = true}, # each tag will have its own feed
