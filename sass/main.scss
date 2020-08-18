@@ -1,0 +1,65 @@
+@import '../themes/zola-paper/sass/font-families';
+@import '../themes/zola-paper/sass/theme';
+/*
+* Custom stuff below
+*/
+
+/* dark style support from OS */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme: #1d1e20;
+        --entry: #2e2e33;
+        --primary: rgba(255, 255, 255, 0.84);
+        --secondary: rgba(255, 255, 255, 0.56);
+        --tertiary: rgba(255, 255, 255, 0.16);
+        --content: rgba(255, 255, 255, 0.64);
+
+        --hljs-bg: #2e2e33;
+        --code-bg: #37383e;
+        --border: #5b5d67;
+    }
+}
+
+img {
+    /* fix image height */
+    height: auto;
+}
+/* image zoom */
+img.zoomable {
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+img.zoom {
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+/* Social Icons */
+a.icon {
+    float: left;
+    padding: 2px;
+    transition: fill .2s ease-in;
+    box-shadow: none;
+    top: -7px;
+    position: relative;
+    opacity: 0.7;
+    margin: 0 1em 0 0;
+}
+
+a.icon:hover {
+    opacity: 1;
+}
+a.icon:active {
+    transform: scale(2);
+}
+a.icon:hover .invert-color path {
+    fill: #eee;
+}
+
+.github path {
+    fill: var(--primary);
+}
+
+// .emoji {
+// font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+// }
