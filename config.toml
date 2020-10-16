@@ -5,7 +5,7 @@ base_url = "https://sebastian-schmidt.me"
 
 # The site title and description; used in feeds by default.
 title = "Sebastian Schmidt"
-description = ""
+description = "Hi, I'm Sebastian, an Australian developer, with interested in information security the web and open-source software."
 
 # The default language; used in feeds.
 default_language = "en"
@@ -28,20 +28,22 @@ highlight_code = true
 generate_feed = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
 copyright = "CC BY-SA 4.0"
 
-# taxonomies = [
-#     {name = "tags", feed = true}, # each tag will have its own feed
-#     {name = "tags", lang = "fr"}, # you can have taxonomies with the same name in multiple languages
-#     {name = "categories", paginate_by = 5},  # 5 items per page for a term
+taxonomies = [
+    {name = "tags", feed = true, paginate_by = 10}, # each tag will have its own feed
+#     {name = "tags", lang = "de"}, # you can have taxonomies with the same name in multiple languages
+#     {name = "categories", paginate_by = 50},  # 5 items per page for a term
 #     {name = "authors"}, # Basic definition: no feed or pagination
-# ]
+]
 
 [extra]
 # Put all your custom variables here
 author = "Sebastian Schmidt"
+author_url = "https://www.twitter.com/publicarray"
+
 links = [
     {name="About", url="/pages/about"},
     {name="Contact", url="/pages/contact"},

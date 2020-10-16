@@ -1,3 +1,4 @@
 .DS_Store
 public
 templates copy
+node_modules

@@ -3,7 +3,10 @@
 /*
 * Custom stuff below
 */
-
+:root {
+    --code-bg: #f1f1f1;
+    --content: rgba(0, 0, 0, 0.76)
+}
 /* dark style support from OS */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -20,6 +23,12 @@
     }
 }
 
+.menu li + li, .logo a {
+    margin: 0;
+}
+.menu a, .logo a {
+    padding: 0 var(--gap);
+}
 img {
     /* fix image height */
     height: auto;
@@ -48,6 +57,7 @@ a.icon {
 
 a.icon:hover {
     opacity: 1;
+    background: transparent;
 }
 a.icon:active {
     transform: scale(2);
@@ -55,9 +65,50 @@ a.icon:active {
 a.icon:hover .invert-color path {
     fill: #eee;
 }
+a {
+    color: #5085ff;
+    padding: 1pt 2pt;
+    border: 2px solid transparent;
+}
+.post-content a {
+    box-shadow: none;
+    // border-bottom: 1px solid scale-color($primary, $alpha: -25%);
+}
+// .post-content a:hover {
+//     border-bottom: 1px solid transparent;
+// }
+a:hover, .post-tags a:hover {
+    background: var(--primary);
+    color: var(--theme);
+}
+a.entry-link {
+    border-radius: var(--radius);
+    background: transparent;
+}
+.first-entry {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.post-entry:hover, .first-entry:hover {
+    background: var(--content);
+    color: var(--theme);
+    border-radius: var(--radius);
+}
+.post-entry:hover h2, .post-entry:hover .entry-content *, .post-entry:hover .entry-footer, .first-entry:hover h2, .first-entry:hover .entry-content *, .first-entry:hover .entry-footer, {
+    color: var(--theme);
+}
 
 .github path {
     fill: var(--primary);
+}
+strong, b {
+    font-weight: 700;
+}
+strong, b, em {
+    color: var(--primary);
+}
+blockquote {
+    background: var(--code-bg);
 }
 
 // .emoji {
