@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Sebastian Schmidt - UniFi</title>
+	<subtitle>Hi, I&#x27;m Sebastian, an Australian developer, with interested in information security the web and open-source software.</subtitle>
+	<link href="https://sebastian-schmidt.me/tags/unifi/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastian-schmidt.me"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-10-16T00:00:00+00:00</updated>
+	<id>https://sebastian-schmidt.me/tags/unifi/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Synology Guest VLAN with UniFi</title>
+		<published>2020-10-16T00:00:00+00:00</published>
+		<updated>2020-10-16T00:00:00+00:00</updated>
+		<link href="https://sebastian-schmidt.me/synology-guest-vlan-with-unifi/" type="text/html"/>
+		<id>https://sebastian-schmidt.me/synology-guest-vlan-with-unifi/</id>
+		<content type="html">&lt;p&gt;TL;DR: Tag the guest network as VLAN &lt;strong&gt;1733&lt;&#x2F;strong&gt; in the UniFi Controller.&lt;&#x2F;p&gt;
+&lt;p&gt;I have had the Synology RT2600ac for a few years and it was time to upgrade the Wi-fi at my work. I used the RT2600ac and bought a new UniFi nanoHD AP. Both are excellent products but making the guest network work properly took more time than I had anticipated. &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt; The Synology device does not officially support VLANs (yet) on their LAN. But they have &lt;a href=&quot;https:&#x2F;&#x2F;www.synology.com&#x2F;en-global&#x2F;knowledgebase&#x2F;SRM&#x2F;tutorial&#x2F;Mesh_System&#x2F;How_do_I_set_up_Wi_Fi_system_with_managed_switch&quot;&gt;Documented the VLAN used by their guest network&lt;&#x2F;a&gt; (Finding this took me longer then I&#x27;m willing to admit, hence this blog post) The VLAN for the guest network is &lt;strong&gt;1733&lt;&#x2F;strong&gt;. I first found it mentioned on the &lt;a href=&quot;https:&#x2F;&#x2F;community.synology.com&#x2F;enu&#x2F;forum&#x2F;2&#x2F;post&#x2F;127186&quot;&gt;Synology Forum&lt;&#x2F;a&gt; Thanks @rustyduck!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;let-s-fix-it&quot;&gt;Let&#x27;s Fix it&lt;&#x2F;h2&gt;
+&lt;p&gt;I assume that you already have the networks configured with subnets on the RT2600ac Router and UniFi Controller e.g. &lt;code&gt;10.1.0.0&#x2F;16&lt;&#x2F;code&gt; for your staff and &lt;code&gt;10.2.0.0&#x2F;16&lt;&#x2F;code&gt; guests.&lt;&#x2F;p&gt;
+&lt;p&gt;In my case, I have an unmanaged switch connected to the Synology Router and I have the UniFi NanoHD AP connected to that.&lt;&#x2F;p&gt;
+&lt;p&gt;In the UniFi Controller Settings open your Wi-Fi network (&lt;code&gt;Settings &amp;gt; Wi-Fi &amp;gt; Wi-Fi Networks &amp;gt; [Wi-Fi Network] &amp;gt; Advanced Settings&lt;&#x2F;code&gt;) and for your guest network enable &lt;code&gt;Use a VLAN&lt;&#x2F;code&gt; and set the VLAN ID to &lt;code&gt;1733&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;You can also set the VLAN ID in&lt;code&gt; Networks &amp;gt; Local Networks &amp;gt; [Network] &amp;gt; General&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;unifi-guest-vlan.png&quot; alt=&quot;unifi-guest-vlan.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Just re-provision your UniFi devices and the compatibility issue with the Guest network should be fixed!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
