@@ -6,6 +6,23 @@ group="navigation"
 date=2020-08-18T00:00:00-00:00
 +++
 
+
+## [Package repository for Synology](https://github.com/publicarray/ruspk)
+
+April 2020 - Ongoing
+
+
+<img class="zoomable" src='/images/ruspk.png' alt='Syno Reposetory' width='1905' height='1413' >
+
+A much faster reimplementation of [spkrepo](https://github.com/SynoCommunity/spkrepo)
+
+### Technologies
+* [diesel.rs](https://diesel.rs)
+* [actix.rs](https://actix.rs)
+* [Next.js](https://nextjs.org)
+* [Tailwind.css](https://tailwindcss.com)
+
+
 ## [dnscrypt-proxy package for Synology](https://github.com/publicarray/spksrc/releases)
 
 April 2018
