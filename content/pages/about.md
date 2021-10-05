@@ -2,10 +2,10 @@
 #page_template: index.html
 title=""
 description="Hi, I'm Sebastian, an Australian developer fresh out of University who is interested in information security and open-source software."
-date=2020-08-18T00:00:00-00:00
+date=2021-10-05T00:00:00-00:00
 +++
 <div style="height: 200px">
-    <img src='/images/profile.jpg' alt='Sebastian Schmidt' width='200' height='200' style='margin: 0 auto;border-radius: 50%'>
+    <img src='/images/profile.png' alt='Sebastian Schmidt' width='200' height='200' style='margin: 0 auto;border-radius: 50%'>
 </div>
 
 <div class="reveal">

@@ -1,9 +1,9 @@
 +++
 layout="page"
 title="Projects"
-description="Here is a selected list of projects that I have worked on."
+description="Here is a selected list of projects that I have worked on or are in progress."
 group="navigation"
-date=2020-08-18T00:00:00-00:00
+date=2021-10-05T00:00:00-00:00
 +++
 
 
