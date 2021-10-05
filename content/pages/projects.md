@@ -12,7 +12,7 @@ date=2020-08-18T00:00:00-00:00
 April 2020 - Ongoing
 
 
-<img class="zoomable" src='/images/ruspk.png' alt='Syno Reposetory' width='1905' height='1413' >
+<img class="zoomable" src='/images/ruspk.png' alt='Syno Reposetory' width='1280' height='949' >
 
 A much faster reimplementation of [spkrepo](https://github.com/SynoCommunity/spkrepo)
 
