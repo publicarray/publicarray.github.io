@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sebastian Schmidt - Projects</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- Enable responsiveness on mobile devices-->
+        <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+        <!-- Author -->
+        <meta name="author" content="Sebastian Schmidt">
+
+        <!-- Summary / description -->
+        
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://sebastian-schmidt.me/main.css">
+
+        <!-- Feeds -->
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://sebastian-schmidt.me/atom.xml">
+
+        <!-- Google Analytics -->
+        
+
+        <script>
+            function setTheme() {
+                const time = new Date();
+
+                const prev = localStorage.getItem('date');
+                const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+                const now = time.getTime();
+                let sunrise;
+                let sunset;
+
+                function setBodyClass() {
+                    if (now > sunrise && now < sunset) return;
+                    document.body.classList.add('dark');
+                }
+
+                if (date !== prev) {
+                    // fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+                    //     .then(res => res.json())
+                    //     .then(data => {
+                    //         sunrise = data.sunrise.split(':').map(Number);
+                    //         sunset = data.sunset.split(':').map(Number);
+                    // })
+                    // .catch(() => {
+                        sunrise = [7, 0];
+                        sunset = [19, 0];
+                    // })
+                    // .finally(() => {
+                        sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+                        sunset = time.setHours(sunset[0], sunset[1], 0);
+                        setBodyClass();
+                        localStorage.setItem('sunrise', sunrise);
+                        localStorage.setItem('sunset', sunset);
+                    // });
+                    localStorage.setItem('date', date);
+                } else {
+                    sunrise = Number(localStorage.getItem('sunrise'));
+                    sunset = Number(localStorage.getItem('sunset'));
+                    setBodyClass();
+                }
+            }
+        </script>
+    </head>
+
+    <body class="single">
+
+    <!-- Apply theme -->
+    <script>
+      setTheme();
+    </script>
+
+    
+        <header class="header">
+            <nav class="nav">
+                
+                <p class="logo"><a href="https://sebastian-schmidt.me">Sebastian Schmidt</a></p>
+                
+                <ul class="menu">
+                    
+                    <li><a href="&#x2F;pages&#x2F;about">About</a></li>
+                    
+                    <li><a href="&#x2F;pages&#x2F;contact">Contact</a></li>
+                    
+                    <li><a href="&#x2F;pages&#x2F;projects">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Projects</h1>
+        <div class="post-meta">
+            <span class="post-author">Author: Sebastian Schmidt</span>
+            <br/>
+            <span class="post-date">Published: <time>October  5, 2021</time></span>
+            <span>&middot;</span>
+            <span class="post-reading-time">4 min read</span>
+        </div>
+    </header>
+    <div class="post-content"><h2 id="package-repository-for-synology"><a href="https://github.com/publicarray/ruspk">Package repository for Synology</a></h2>
+<p>April 2020 - Ongoing</p>
+<img class="zoomable" src='/images/ruspk.png' alt='Syno Reposetory' width='1280' height='949' >
+<p>A much faster reimplementation of <a href="https://github.com/SynoCommunity/spkrepo">spkrepo</a></p>
+<h3 id="technologies">Technologies</h3>
+<ul>
+<li><a href="https://diesel.rs">diesel.rs</a></li>
+<li><a href="https://actix.rs">actix.rs</a></li>
+<li><a href="https://nextjs.org">Next.js</a></li>
+<li><a href="https://tailwindcss.com">Tailwind.css</a></li>
+</ul>
+<h2 id="dnscrypt-proxy-package-for-synology"><a href="https://github.com/publicarray/spksrc/releases">dnscrypt-proxy package for Synology</a></h2>
+<p>April 2018</p>
+<img class="zoomable" src='/images/syno-dnscrypt-proxy.png' alt='dnscrypt-proxy' width='1392' height='660' >
+<p>dnscrypt-proxy package for Synology NASs and Routers enables encrypted DNS for your network, custom blacklists, a DNS cache and optional logging. Credits for dnscrypt-proxy goto Frank Denis (<a href="https://twitter.com/jedisct1">@jedisct1</a>). I merely packaged it and added a simple text editor GUI.</p>
+<h3 id="technologies-1">Technologies</h3>
+<ul>
+<li><a href="https://github.com/jedisct1/dnscrypt-proxy">dnscrypt-proxy</a></li>
+<li><a href="https://codemirror.net/">CodeMirror</a></li>
+<li><a href="https://golang.org">Go lang</a></li>
+<li><a href="https://github.com/SynoCommunity/spksrc">spksrc</a></li>
+<li><a href="https://sourceforge.net/projects/dsgpl/">Synology Open Source Project</a></li>
+</ul>
+<h2 id="open-dns-resolver"><a href="https://dns.seby.io">Open DNS resolver</a></h2>
+<p>January 2017 - Ongoing</p>
+<!-- <img src='/images/unbound_munin_by_rcode-year.svg' alt='DNS Statistics' width='497' height='388'> -->
+<img class="zoomable" src='/images/unbound_munin_by_rcode-year.svg' alt='DNS Statistics' width='650' height=479.6666>
+<p>A free Australian DNS resolver with DNSSEC support. The server resolves <a href="https://www.opennic.org/">OpenNIC TLD's</a>. Connections are only supported through <a href="https://dnscrypt.info/protocol">DNSCrypt</a>, <a href="https://tools.ietf.org/html/rfc7858">DNS-over-TLS (DoT)</a> and <a href="https://tools.ietf.org/html/draft-ietf-doh-dns-over-https">DNS-over-HTTPS (DoH)</a> for increased security and privacy. The <a href="https://github.com/publicarray/dns-resolver-infra">server configuration and docker files are open source</a> for you to inspect at your leisure. You can find pretty <a href="https://dns.seby.io/stats.html">graphs and statistics generated from munin</a> here.</p>
+<h3 id="technologies-2">Technologies</h3>
+<ul>
+<li><a href="https://www.unbound.net/">Unbound</a> DNS Resolver with DNSSEC and Query minimisation</li>
+<li><a href="https://www.nlnetlabs.nl/projects/nsd/">NSD</a> for hosting a slave zone of the OpenNIC alt-root</li>
+<li><a href="https://www.haproxy.org/">Haproxy </a> as a proxy and to terminate TLS (TLS 1.2) for DNS-over-TLS and DNS-over-HTTPS (HTTP/2)</li>
+<li><a href="https://github.com/cofyc/dnscrypt-wrapper">dnscrypt-wrapper</a> for supporting the dnscrypt protocol</li>
+<li><a href="https://github.com/jedisct1/rust-doh">rust-doh</a> for implementing the DNS-over-HTTPS protocol. Needs haproxy for HTTPS</li>
+<li><a href="https://docker.com/">Docker</a>, <a href="https://hub.docker.com/u/publicarray/">Docker hub</a> and <a href="https://docs.docker.com/engine/swarm/">Docker swarm</a> for packaging, isolation and deployment</li>
+<li><a href="https://alpinelinux.org/">Alpine Linux</a> used as base Operating System in docker containers</li>
+<li><a href="https://kubernetes.io/">Kubernetes</a> deployment, scaling, and management of docker applications</li>
+<li><a href="https://chrony.tuxfamily.org/">Chrony</a> timekeeping with ntp. <a href="http://www.pool.ntp.org/user/b9nv9cqbjuhggucwvz364">The server</a> is part of <a href="https://ntppool.org/">ntppool.org</a></li>
+</ul>
+<h2 id="map-dl"><a href="https://www.npmjs.com/package/map-dl">map-dl</a></h2>
+<p>October 2016</p>
+<img class="zoomable" src='/images/map-dl.jpg' alt='Showing export progress from Google Maps' width='1280' height='1280'>
+<p>A npm module, CLI (command line) and Website designed to download Google map images, using the Google Maps API. It was created to help researchers easily get image data for a specific area.</p>
+<h3 id="technologies-3">Technologies:</h3>
+<ul>
+<li>JavaScript</li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/">Google Maps JavaScript API</a></li>
+<li><a href="https://developers.google.com/maps/documentation/static-maps/">Google Static Map API</a></li>
+<li><a href="https://npmjs.com">npm</a></li>
+</ul>
+<h2 id="work-integrated-learning">Work Integrated Learning</h2>
+<p>June 2016</p>
+<img class="zoomable" src='/images/workintegratedlearing.png' alt='Work Integrated Learning' width='1280' height='1280'>
+<p>Work Integrated Learning (WIL) is a program designed to integrate final year, undergraduate and postgraduate UNI students into the workplace. This is a website for the course. It aims to facilitate the process of matching students and industry partners with the added ability to share files and schedule events or meetings.</p>
+<p>I was the backend programmer and system administrator during the development of the site.</p>
+<h3 id="technologies-4">Technologies:</h3>
+<ul>
+<li><a href="https://laravel.com/">Laravel</a> 5.2 (laravel-debugbar, maatwebsite/excel, laracasts/generators, ...)</li>
+<li><a href="http://rocketeer.autopergamene.eu/">Rocketeer</a> (a deployment tool)</li>
+<li><a href="https://www.digitalocean.com/">Digital Ocean</a> (Debian jessie, php 7, MySQL, Apache2)</li>
+<li><a href="https://papertrailapp.com/">Papertrail</a> (a log file aggregator and query tool)</li>
+<li><a href="https://mailgun.com/">Mailgun</a> (send and receive email)</li>
+<li><a href="https://bitbucket.org/">Bitbucket</a></li>
+<li>and many more development tools such as git, ufw, fail2ban ...</li>
+</ul>
+<h2 id="solar-system"><a href="https://publicarray.github.io/solarsystem/">Solar System</a></h2>
+<p>September 2015</p>
+<img class="zoomable" src='/images/solarsystem.jpg' alt='Solar System' width='740' height='608'>
+<p>The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles.</p>
+<p>See the slides for more information: <a href="https://slides.com/publicarray/solar-system">slides.com/publicarray/solar-system</a></p>
+<h3 id="technologies-5">Technologies:</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/WebGL">WebGl</a> with <a href="https://github.com/GooTechnologies/goojs">gooengine.js</a> and <a href="https://goocreate.com/">goocreate.com</a></li>
+<li><a href="https://jekyllrb.com/">Jekyll</a></li>
+<li><a href="https://git-scm.com/">git</a> with <a href="https://github.com/">Github</a> and <a href="https://pages.github.com/">Github Pages</a></li>
+</ul>
+<p><em>More projects are at <a href="https://github.com/publicarray">Github</a>.</em></p>
+<script>
+    let images = document.getElementsByTagName('img');
+    for (img of images) {
+        img.addEventListener('click', function (e) {
+            if (e.target.classList.contains('zoomable')) {
+                e.target.classList.toggle('zoom')
+            }
+        })
+    }
+</script>
+</div>
+    <footer class="post-footer">
+        
+    </footer>
+</article>
+
+        </main>
+
+        <!-- <footer class="footer">
+            <span>&copy; 2023 <a href="https://sebastian-schmidt.me">Sebastian Schmidt</a></span>
+            <span>&middot;</span>
+            <span>Powered by <a href="https://www.getzola.org" rel="noopener" target="_blank">Zola</a>️</span>
+            <span>&middot;</span>
+            <span>Theme️ <a href="https://github.com/schoenenberg/zola-paper" rel="noopener" target="_blank">Zola-Paper</a></span>
+        </footer> -->
+    
+    </body>
+</html>

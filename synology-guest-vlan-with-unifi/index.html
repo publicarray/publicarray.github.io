@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sebastian Schmidt - Synology Guest VLAN with UniFi</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- Enable responsiveness on mobile devices-->
+        <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+        <!-- Author -->
+        <meta name="author" content="Sebastian Schmidt">
+
+        <!-- Summary / description -->
+        <meta name="description" content="&lt;p&gt;TL;DR: Tag the guest network as VLAN &lt;strong&gt;1733&lt;&#x2F;strong&gt; in the UniFi Controller.&lt;&#x2F;p&gt;
+&lt;p&gt;I have had the Synology RT2600ac for a few years and it was time to upgrade the Wi-fi at my work. I used the RT2600ac and bought a new UniFi nanoHD AP. Both are excellent products but making the guest network work properly took more time than I had anticipated. ">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://sebastian-schmidt.me/main.css">
+
+        <!-- Feeds -->
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://sebastian-schmidt.me/atom.xml">
+
+        <!-- Google Analytics -->
+        
+
+        <script>
+            function setTheme() {
+                const time = new Date();
+
+                const prev = localStorage.getItem('date');
+                const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+                const now = time.getTime();
+                let sunrise;
+                let sunset;
+
+                function setBodyClass() {
+                    if (now > sunrise && now < sunset) return;
+                    document.body.classList.add('dark');
+                }
+
+                if (date !== prev) {
+                    // fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+                    //     .then(res => res.json())
+                    //     .then(data => {
+                    //         sunrise = data.sunrise.split(':').map(Number);
+                    //         sunset = data.sunset.split(':').map(Number);
+                    // })
+                    // .catch(() => {
+                        sunrise = [7, 0];
+                        sunset = [19, 0];
+                    // })
+                    // .finally(() => {
+                        sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+                        sunset = time.setHours(sunset[0], sunset[1], 0);
+                        setBodyClass();
+                        localStorage.setItem('sunrise', sunrise);
+                        localStorage.setItem('sunset', sunset);
+                    // });
+                    localStorage.setItem('date', date);
+                } else {
+                    sunrise = Number(localStorage.getItem('sunrise'));
+                    sunset = Number(localStorage.getItem('sunset'));
+                    setBodyClass();
+                }
+            }
+        </script>
+    </head>
+
+    <body class="single">
+
+    <!-- Apply theme -->
+    <script>
+      setTheme();
+    </script>
+
+    
+        <header class="header">
+            <nav class="nav">
+                
+                <p class="logo"><a href="https://sebastian-schmidt.me">Sebastian Schmidt</a></p>
+                
+                <ul class="menu">
+                    
+                    <li><a href="&#x2F;pages&#x2F;about">About</a></li>
+                    
+                    <li><a href="&#x2F;pages&#x2F;contact">Contact</a></li>
+                    
+                    <li><a href="&#x2F;pages&#x2F;projects">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Synology Guest VLAN with UniFi</h1>
+        <div class="post-meta">
+            <span class="post-author">Author: Sebastian Schmidt</span>
+            <br/>
+            <span class="post-date">Published: <time>October 16, 2020</time></span>
+            <span>&middot;</span>
+            <span class="post-reading-time">2 min read</span>
+        </div>
+    </header>
+    <div class="post-content"><p>TL;DR: Tag the guest network as VLAN <strong>1733</strong> in the UniFi Controller.</p>
+<p>I have had the Synology RT2600ac for a few years and it was time to upgrade the Wi-fi at my work. I used the RT2600ac and bought a new UniFi nanoHD AP. Both are excellent products but making the guest network work properly took more time than I had anticipated. <span id="continue-reading"></span> The Synology device does not officially support VLANs (yet) on their LAN. But they have <a href="https://www.synology.com/en-global/knowledgebase/SRM/tutorial/Mesh_System/How_do_I_set_up_Wi_Fi_system_with_managed_switch">Documented the VLAN used by their guest network</a> (Finding this took me longer then I'm willing to admit, hence this blog post) The VLAN for the guest network is <strong>1733</strong>. I first found it mentioned on the <a href="https://community.synology.com/enu/forum/2/post/127186">Synology Forum</a> Thanks @rustyduck!</p>
+<h2 id="let-s-fix-it">Let's Fix it</h2>
+<p>I assume that you already have the networks configured with subnets on the RT2600ac Router and UniFi Controller e.g. <code>10.1.0.0/16</code> for your staff and <code>10.2.0.0/16</code> guests.</p>
+<p>In my case, I have an unmanaged switch connected to the Synology Router and I have the UniFi NanoHD AP connected to that.</p>
+<p>In the UniFi Controller Settings open your Wi-Fi network (<code>Settings &gt; Wi-Fi &gt; Wi-Fi Networks &gt; [Wi-Fi Network] &gt; Advanced Settings</code>) and for your guest network enable <code>Use a VLAN</code> and set the VLAN ID to <code>1733</code>.</p>
+<p>You can also set the VLAN ID in<code> Networks &gt; Local Networks &gt; [Network] &gt; General</code></p>
+<p><img src="/images/unifi-guest-vlan.png" alt="unifi-guest-vlan.png" /></p>
+<p>Just re-provision your UniFi devices and the compatibility issue with the Guest network should be fixed!</p>
+</div>
+    <footer class="post-footer">
+        
+        <ul class="post-tags">
+        
+            <li><a href="https://sebastian-schmidt.me/tags/networking/">Networking</a></li>
+        
+            <li><a href="https://sebastian-schmidt.me/tags/ubiquiti/">Ubiquiti</a></li>
+        
+            <li><a href="https://sebastian-schmidt.me/tags/synology/">Synology</a></li>
+        
+            <li><a href="https://sebastian-schmidt.me/tags/unifi/">UniFi</a></li>
+        
+        </ul>
+        
+    </footer>
+</article>
+
+        </main>
+
+        <!-- <footer class="footer">
+            <span>&copy; 2023 <a href="https://sebastian-schmidt.me">Sebastian Schmidt</a></span>
+            <span>&middot;</span>
+            <span>Powered by <a href="https://www.getzola.org" rel="noopener" target="_blank">Zola</a>️</span>
+            <span>&middot;</span>
+            <span>Theme️ <a href="https://github.com/schoenenberg/zola-paper" rel="noopener" target="_blank">Zola-Paper</a></span>
+        </footer> -->
+    
+    </body>
+</html>

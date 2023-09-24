@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Sebastian Schmidt</title>
+    <subtitle>Hi, I&#x27;m Sebastian, an Australian developer, with interested in information security the web and open-source software.</subtitle>
+    <link href="https://sebastian-schmidt.me/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://sebastian-schmidt.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-10-05T00:00:00+00:00</updated>
+    <id>https://sebastian-schmidt.me/atom.xml</id>
+    <entry xml:lang="en">
+        <title></title>
+        <published>2021-10-05T00:00:00+00:00</published>
+        <updated>2021-10-05T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sebastian-schmidt.me/pages/about/" type="text/html"/>
+        <id>https://sebastian-schmidt.me/pages/about/</id>
+        
+        <content type="html">&lt;div style=&quot;height: 200px&quot;&gt;
+    &lt;img src=&#x27;&#x2F;images&#x2F;profile.png&#x27; alt=&#x27;Sebastian Schmidt&#x27; width=&#x27;200&#x27; height=&#x27;200&#x27; style=&#x27;margin: 0 auto;border-radius: 50%&#x27;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;reveal&quot;&gt;
+  &lt;h1&gt;Hello, I&#x27;m Sebastian.&lt;&#x2F;h1&gt;
+  &lt;p&gt;I&#x27;m an Australian developer working with open-source software. I believe websites should be fast for everyone, simple, secure and not evade the privacy of it&#x27;s users. I intend to make the web a safer place one website at at time, following the industry&#x27;s best practices.&lt;&#x2F;p&gt;
+&lt;p&gt;My open sourced and contributed projects are available on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&#x2F;&quot;&gt;Github&lt;&#x2F;a&gt;. If you prefer you can also check out a nicer looking &lt;a href=&quot;https:&#x2F;&#x2F;resume.github.io&#x2F;?publicarray&quot;&gt;résumé representation of my Github profile&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Projects</title>
+        <published>2021-10-05T00:00:00+00:00</published>
+        <updated>2021-10-05T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sebastian-schmidt.me/pages/projects/" type="text/html"/>
+        <id>https://sebastian-schmidt.me/pages/projects/</id>
+        
+        <content type="html">&lt;h2 id=&quot;package-repository-for-synology&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&#x2F;ruspk&quot;&gt;Package repository for Synology&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;April 2020 - Ongoing&lt;&#x2F;p&gt;
+&lt;img class=&quot;zoomable&quot; src=&#x27;&#x2F;images&#x2F;ruspk.png&#x27; alt=&#x27;Syno Reposetory&#x27; width=&#x27;1280&#x27; height=&#x27;949&#x27; &gt;
+&lt;p&gt;A much faster reimplementation of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SynoCommunity&#x2F;spkrepo&quot;&gt;spkrepo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;diesel.rs&quot;&gt;diesel.rs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;actix.rs&quot;&gt;actix.rs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nextjs.org&quot;&gt;Next.js&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tailwindcss.com&quot;&gt;Tailwind.css&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dnscrypt-proxy-package-for-synology&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&#x2F;spksrc&#x2F;releases&quot;&gt;dnscrypt-proxy package for Synology&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;April 2018&lt;&#x2F;p&gt;
+&lt;img class=&quot;zoomable&quot; src=&#x27;&#x2F;images&#x2F;syno-dnscrypt-proxy.png&#x27; alt=&#x27;dnscrypt-proxy&#x27; width=&#x27;1392&#x27; height=&#x27;660&#x27; &gt;
+&lt;p&gt;dnscrypt-proxy package for Synology NASs and Routers enables encrypted DNS for your network, custom blacklists, a DNS cache and optional logging. Credits for dnscrypt-proxy goto Frank Denis (&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jedisct1&quot;&gt;@jedisct1&lt;&#x2F;a&gt;). I merely packaged it and added a simple text editor GUI.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;technologies-1&quot;&gt;Technologies&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jedisct1&#x2F;dnscrypt-proxy&quot;&gt;dnscrypt-proxy&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;codemirror.net&#x2F;&quot;&gt;CodeMirror&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;golang.org&quot;&gt;Go lang&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SynoCommunity&#x2F;spksrc&quot;&gt;spksrc&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;dsgpl&#x2F;&quot;&gt;Synology Open Source Project&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;open-dns-resolver&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dns.seby.io&quot;&gt;Open DNS resolver&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;January 2017 - Ongoing&lt;&#x2F;p&gt;
+&lt;!-- &lt;img src=&#x27;&#x2F;images&#x2F;unbound_munin_by_rcode-year.svg&#x27; alt=&#x27;DNS Statistics&#x27; width=&#x27;497&#x27; height=&#x27;388&#x27;&gt; --&gt;
+&lt;img class=&quot;zoomable&quot; src=&#x27;&#x2F;images&#x2F;unbound_munin_by_rcode-year.svg&#x27; alt=&#x27;DNS Statistics&#x27; width=&#x27;650&#x27; height=479.6666&gt;
+&lt;p&gt;A free Australian DNS resolver with DNSSEC support. The server resolves &lt;a href=&quot;https:&#x2F;&#x2F;www.opennic.org&#x2F;&quot;&gt;OpenNIC TLD&#x27;s&lt;&#x2F;a&gt;. Connections are only supported through &lt;a href=&quot;https:&#x2F;&#x2F;dnscrypt.info&#x2F;protocol&quot;&gt;DNSCrypt&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;tools.ietf.org&#x2F;html&#x2F;rfc7858&quot;&gt;DNS-over-TLS (DoT)&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;tools.ietf.org&#x2F;html&#x2F;draft-ietf-doh-dns-over-https&quot;&gt;DNS-over-HTTPS (DoH)&lt;&#x2F;a&gt; for increased security and privacy. The &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&#x2F;dns-resolver-infra&quot;&gt;server configuration and docker files are open source&lt;&#x2F;a&gt; for you to inspect at your leisure. You can find pretty &lt;a href=&quot;https:&#x2F;&#x2F;dns.seby.io&#x2F;stats.html&quot;&gt;graphs and statistics generated from munin&lt;&#x2F;a&gt; here.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;technologies-2&quot;&gt;Technologies&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.unbound.net&#x2F;&quot;&gt;Unbound&lt;&#x2F;a&gt; DNS Resolver with DNSSEC and Query minimisation&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.nlnetlabs.nl&#x2F;projects&#x2F;nsd&#x2F;&quot;&gt;NSD&lt;&#x2F;a&gt; for hosting a slave zone of the OpenNIC alt-root&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.haproxy.org&#x2F;&quot;&gt;Haproxy &lt;&#x2F;a&gt; as a proxy and to terminate TLS (TLS 1.2) for DNS-over-TLS and DNS-over-HTTPS (HTTP&#x2F;2)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cofyc&#x2F;dnscrypt-wrapper&quot;&gt;dnscrypt-wrapper&lt;&#x2F;a&gt; for supporting the dnscrypt protocol&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jedisct1&#x2F;rust-doh&quot;&gt;rust-doh&lt;&#x2F;a&gt; for implementing the DNS-over-HTTPS protocol. Needs haproxy for HTTPS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docker.com&#x2F;&quot;&gt;Docker&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;hub.docker.com&#x2F;u&#x2F;publicarray&#x2F;&quot;&gt;Docker hub&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;docs.docker.com&#x2F;engine&#x2F;swarm&#x2F;&quot;&gt;Docker swarm&lt;&#x2F;a&gt; for packaging, isolation and deployment&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;alpinelinux.org&#x2F;&quot;&gt;Alpine Linux&lt;&#x2F;a&gt; used as base Operating System in docker containers&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;kubernetes.io&#x2F;&quot;&gt;Kubernetes&lt;&#x2F;a&gt; deployment, scaling, and management of docker applications&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;chrony.tuxfamily.org&#x2F;&quot;&gt;Chrony&lt;&#x2F;a&gt; timekeeping with ntp. &lt;a href=&quot;http:&#x2F;&#x2F;www.pool.ntp.org&#x2F;user&#x2F;b9nv9cqbjuhggucwvz364&quot;&gt;The server&lt;&#x2F;a&gt; is part of &lt;a href=&quot;https:&#x2F;&#x2F;ntppool.org&#x2F;&quot;&gt;ntppool.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;map-dl&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;map-dl&quot;&gt;map-dl&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;October 2016&lt;&#x2F;p&gt;
+&lt;img class=&quot;zoomable&quot; src=&#x27;&#x2F;images&#x2F;map-dl.jpg&#x27; alt=&#x27;Showing export progress from Google Maps&#x27; width=&#x27;1280&#x27; height=&#x27;1280&#x27;&gt;
+&lt;p&gt;A npm module, CLI (command line) and Website designed to download Google map images, using the Google Maps API. It was created to help researchers easily get image data for a specific area.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;technologies-3&quot;&gt;Technologies:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JavaScript&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;maps&#x2F;documentation&#x2F;javascript&#x2F;&quot;&gt;Google Maps JavaScript API&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;maps&#x2F;documentation&#x2F;static-maps&#x2F;&quot;&gt;Google Static Map API&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;npmjs.com&quot;&gt;npm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;work-integrated-learning&quot;&gt;Work Integrated Learning&lt;&#x2F;h2&gt;
+&lt;p&gt;June 2016&lt;&#x2F;p&gt;
+&lt;img class=&quot;zoomable&quot; src=&#x27;&#x2F;images&#x2F;workintegratedlearing.png&#x27; alt=&#x27;Work Integrated Learning&#x27; width=&#x27;1280&#x27; height=&#x27;1280&#x27;&gt;
+&lt;p&gt;Work Integrated Learning (WIL) is a program designed to integrate final year, undergraduate and postgraduate UNI students into the workplace. This is a website for the course. It aims to facilitate the process of matching students and industry partners with the added ability to share files and schedule events or meetings.&lt;&#x2F;p&gt;
+&lt;p&gt;I was the backend programmer and system administrator during the development of the site.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;technologies-4&quot;&gt;Technologies:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;laravel.com&#x2F;&quot;&gt;Laravel&lt;&#x2F;a&gt; 5.2 (laravel-debugbar, maatwebsite&#x2F;excel, laracasts&#x2F;generators, ...)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;rocketeer.autopergamene.eu&#x2F;&quot;&gt;Rocketeer&lt;&#x2F;a&gt; (a deployment tool)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;&quot;&gt;Digital Ocean&lt;&#x2F;a&gt; (Debian jessie, php 7, MySQL, Apache2)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;papertrailapp.com&#x2F;&quot;&gt;Papertrail&lt;&#x2F;a&gt; (a log file aggregator and query tool)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mailgun.com&#x2F;&quot;&gt;Mailgun&lt;&#x2F;a&gt; (send and receive email)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.org&#x2F;&quot;&gt;Bitbucket&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;and many more development tools such as git, ufw, fail2ban ...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;solar-system&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;publicarray.github.io&#x2F;solarsystem&#x2F;&quot;&gt;Solar System&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;September 2015&lt;&#x2F;p&gt;
+&lt;img class=&quot;zoomable&quot; src=&#x27;&#x2F;images&#x2F;solarsystem.jpg&#x27; alt=&#x27;Solar System&#x27; width=&#x27;740&#x27; height=&#x27;608&#x27;&gt;
+&lt;p&gt;The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles.&lt;&#x2F;p&gt;
+&lt;p&gt;See the slides for more information: &lt;a href=&quot;https:&#x2F;&#x2F;slides.com&#x2F;publicarray&#x2F;solar-system&quot;&gt;slides.com&#x2F;publicarray&#x2F;solar-system&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;technologies-5&quot;&gt;Technologies:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;WebGL&quot;&gt;WebGl&lt;&#x2F;a&gt; with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GooTechnologies&#x2F;goojs&quot;&gt;gooengine.js&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;goocreate.com&#x2F;&quot;&gt;goocreate.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;&quot;&gt;git&lt;&#x2F;a&gt; with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;&quot;&gt;Github&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;pages.github.com&#x2F;&quot;&gt;Github Pages&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;More projects are at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&quot;&gt;Github&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;script&gt;
+    let images = document.getElementsByTagName(&#x27;img&#x27;);
+    for (img of images) {
+        img.addEventListener(&#x27;click&#x27;, function (e) {
+            if (e.target.classList.contains(&#x27;zoomable&#x27;)) {
+                e.target.classList.toggle(&#x27;zoom&#x27;)
+            }
+        })
+    }
+&lt;&#x2F;script&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Synology Guest VLAN with UniFi</title>
+        <published>2020-10-16T00:00:00+00:00</published>
+        <updated>2020-10-16T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sebastian-schmidt.me/synology-guest-vlan-with-unifi/" type="text/html"/>
+        <id>https://sebastian-schmidt.me/synology-guest-vlan-with-unifi/</id>
+        
+        <summary type="html">&lt;p&gt;TL;DR: Tag the guest network as VLAN &lt;strong&gt;1733&lt;&#x2F;strong&gt; in the UniFi Controller.&lt;&#x2F;p&gt;
+&lt;p&gt;I have had the Synology RT2600ac for a few years and it was time to upgrade the Wi-fi at my work. I used the RT2600ac and bought a new UniFi nanoHD AP. Both are excellent products but making the guest network work properly took more time than I had anticipated. </summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Contact</title>
+        <published>2020-08-18T00:00:00+00:00</published>
+        <updated>2020-08-18T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sebastian-schmidt.me/pages/contact/" type="text/html"/>
+        <id>https://sebastian-schmidt.me/pages/contact/</id>
+        
+        <content type="html">&lt;p&gt;&lt;a class=&quot;icon&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;publicarray&quot; rel=&quot;noopener&quot; title=&quot;Twitter&quot;&gt;&lt;svg class=&quot;twitter&quot; width=&quot;40&quot; height=&quot;40&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;#2aa9e0&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Twitter &#x2F; X: &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;publicarray&quot;&gt;publicarray&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a class=&quot;icon&quot; href=&quot;https:&#x2F;&#x2F;infosec.exchange&#x2F;@publicarray&quot; rel=&quot;noopener&quot; title=&quot;infosec.exchange&quot;&gt;&lt;svg class=&quot;mastodon&quot; width=&quot;40&quot; height=&quot;40&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fab&quot; data-icon=&quot;infosec.exchange&quot; role=&quot;img&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 448 512&quot;&gt;&lt;path fill=&quot;#2b90d9&quot; d=&quot;M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Mastodon: &lt;a href=&quot;https:&#x2F;&#x2F;infosec.exchange&#x2F;@publicarray&quot;&gt;publicarray&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a class=&quot;icon&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&quot; rel=&quot;noopener&quot; title=&quot;GitHub&quot;&gt;&lt;svg class=&quot;github&quot; width=&quot;40&quot; height=&quot;40&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fab&quot; data-icon=&quot;github&quot; role=&quot;img&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 496 512&quot;&gt;&lt;path fill=&quot;#000&quot; d=&quot;M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;!-- ![GitHub](&#x2F;icons&#x2F;github.svg) --&gt;
+&lt;p&gt;Github: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;publicarray&quot;&gt;publicarray&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a class=&quot;icon&quot; href=&quot;https:&#x2F;&#x2F;keybase.io&#x2F;publicarray&quot; rel=&quot;noopener&quot; title=&quot;Keybase&quot;&gt;&lt;svg class=&quot;keybase&quot; width=&quot;40&quot; height=&quot;40&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fab&quot; data-icon=&quot;keybase&quot; role=&quot;img&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 448 512&quot;&gt;&lt;path fill=&quot;darkorange&quot; d=&quot;M286.17 419a18 18 0 1 0 18 18 18 18 0 0 0-18-18zm111.92-147.6c-9.5-14.62-39.37-52.45-87.26-73.71q-9.1-4.06-18.38-7.27a78.43 78.43 0 0 0-47.88-104.13c-12.41-4.1-23.33-6-32.41-5.77-.6-2-1.89-11 9.4-35L198.66 32l-5.48 7.56c-8.69 12.06-16.92 23.55-24.34 34.89a51 51 0 0 0-8.29-1.25c-41.53-2.45-39-2.33-41.06-2.33-50.61 0-50.75 52.12-50.75 45.88l-2.36 36.68c-1.61 27 19.75 50.21 47.63 51.85l8.93.54a214 214 0 0 0-46.29 35.54C14 304.66 14 374 14 429.77v33.64l23.32-29.8a148.6 148.6 0 0 0 14.56 37.56c5.78 10.13 14.87 9.45 19.64 7.33 4.21-1.87 10-6.92 3.75-20.11a178.29 178.29 0 0 1-15.76-53.13l46.82-59.83-24.66 74.11c58.23-42.4 157.38-61.76 236.25-38.59 34.2 10.05 67.45.69 84.74-23.84.72-1 1.2-2.16 1.85-3.22a156.09 156.09 0 0 1 2.8 28.43c0 23.3-3.69 52.93-14.88 81.64-2.52 6.46 1.76 14.5 8.6 15.74 7.42 1.57 15.33-3.1 18.37-11.15C429 443 434 414 434 382.32c0-38.58-13-77.46-35.91-110.92zM142.37 128.58l-15.7-.93-1.39 21.79 13.13.78a93 93 0 0 0 .32 19.57l-22.38-1.34a12.28 12.28 0 0 1-11.76-12.79L107 119c1-12.17 13.87-11.27 13.26-11.32l29.11 1.73a144.35 144.35 0 0 0-7 19.17zm148.42 172.18a10.51 10.51 0 0 1-14.35-1.39l-9.68-11.49-34.42 27a8.09 8.09 0 0 1-11.13-1.08l-15.78-18.64a7.38 7.38 0 0 1 1.34-10.34l34.57-27.18-14.14-16.74-17.09 13.45a7.75 7.75 0 0 1-10.59-1s-3.72-4.42-3.8-4.53a7.38 7.38 0 0 1 1.37-10.34L214 225.19s-18.51-22-18.6-22.14a9.56 9.56 0 0 1 1.74-13.42 10.38 10.38 0 0 1 14.3 1.37l81.09 96.32a9.58 9.58 0 0 1-1.74 13.44zM187.44 419a18 18 0 1 0 18 18 18 18 0 0 0-18-18z&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Keybase: &lt;a href=&quot;https:&#x2F;&#x2F;keybase.io&#x2F;publicarray&quot;&gt;publicarray&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;!-- Tox: [publicarray](https:&#x2F;&#x2F;toxme.io&#x2F;u&#x2F;publicarray)
+
+Bitcoin: [publicarray](publicarray)
+
+Email: [hello[at]seby.io](mailto:hello[at]seby.io) --&gt;
+&lt;!-- &lt;a class=&quot;icon&quot; href=&quot;irc:&#x2F;&#x2F;freenode.com&#x2F;publicarray&quot; rel=&quot;noopener&quot; title=&quot;freenode (IRC)&quot;&gt;&lt;svg class=&quot;freenode&quot; width=&quot;40&quot; height=&quot;40&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;comment-dots&quot; role=&quot;img&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;green&quot; d=&quot;M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;
+
+IRC: [publicarray](irc:&#x2F;&#x2F;freenode.com&#x2F;publicarray) --&gt;
+&lt;p&gt;&lt;a class=&quot;icon&quot; href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@publicarray:matrix.org&quot; rel=&quot;noopener&quot; title=&quot;Matrix&quot;&gt;&lt;svg width=&quot;40&quot; height=&quot;40&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; fill=&quot;none&quot; viewBox=&quot;0 0 200 200&quot; role=&quot;img&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot;&gt;&lt;g clip-rule=&quot;evenodd&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;path d=&quot;m100 200c55.228 0 100-44.772 100-100 0-55.2285-44.772-100-100-100-55.2285 0-100 44.7715-100 100 0 55.228 44.7715 100 100 100z&quot; fill=&quot;#0dbd8b&quot;&#x2F;&gt;&lt;g class=&quot;invert-color&quot; fill=&quot;#fff&quot;&gt;&lt;path d=&quot;m81.7169 46.5946c0-4.0365 3.279-7.3087 7.3239-7.3087 27.4152 0 49.6402 22.1783 49.6402 49.5366 0 4.0365-3.28 7.3087-7.324 7.3087-4.045 0-7.324-3.2722-7.324-7.3087 0-19.2853-15.667-34.9192-34.9922-34.9192-4.0449 0-7.3239-3.2722-7.3239-7.3087z&quot;&#x2F;&gt;&lt;path d=&quot;m153.39 81.5137c4.045 0 7.324 3.2722 7.324 7.3087 0 27.3586-22.224 49.5366-49.639 49.5366-4.045 0-7.324-3.272-7.324-7.309 0-4.036 3.279-7.308 7.324-7.308 19.325 0 34.991-15.634 34.991-34.9196 0-4.0365 3.279-7.3087 7.324-7.3087z&quot;&#x2F;&gt;&lt;path d=&quot;m118.398 153.405c0 4.037-3.279 7.309-7.324 7.309-27.4148 0-49.6393-22.178-49.6393-49.537 0-4.036 3.2791-7.308 7.324-7.308 4.0448 0 7.3239 3.272 7.3239 7.308 0 19.286 15.6663 34.92 34.9914 34.92 4.045 0 7.324 3.272 7.324 7.308z&quot;&#x2F;&gt;&lt;path d=&quot;m46.6097 118.486c-4.0449 0-7.3239-3.272-7.3239-7.308 0-27.3587 22.2244-49.5371 49.6397-49.5371 4.0449 0 7.3239 3.2723 7.3239 7.3088s-3.279 7.3087-7.3239 7.3087c-19.3255 0-34.9918 15.6338-34.9918 34.9196 0 4.036-3.2791 7.308-7.324 7.308z&quot;&#x2F;&gt;&lt;&#x2F;g&gt;&lt;&#x2F;g&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Element (Riot): &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@publicarray:matrix.org&quot;&gt;@publicarray:matrix.org&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

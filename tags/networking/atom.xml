@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Sebastian Schmidt - Networking</title>
+    <subtitle>Hi, I&#x27;m Sebastian, an Australian developer, with interested in information security the web and open-source software.</subtitle>
+    <link href="https://sebastian-schmidt.me/tags/networking/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://sebastian-schmidt.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-10-16T00:00:00+00:00</updated>
+    <id>https://sebastian-schmidt.me/tags/networking/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Synology Guest VLAN with UniFi</title>
+        <published>2020-10-16T00:00:00+00:00</published>
+        <updated>2020-10-16T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sebastian-schmidt.me/synology-guest-vlan-with-unifi/" type="text/html"/>
+        <id>https://sebastian-schmidt.me/synology-guest-vlan-with-unifi/</id>
+        
+        <summary type="html">&lt;p&gt;TL;DR: Tag the guest network as VLAN &lt;strong&gt;1733&lt;&#x2F;strong&gt; in the UniFi Controller.&lt;&#x2F;p&gt;
+&lt;p&gt;I have had the Synology RT2600ac for a few years and it was time to upgrade the Wi-fi at my work. I used the RT2600ac and bought a new UniFi nanoHD AP. Both are excellent products but making the guest network work properly took more time than I had anticipated. </summary>
+        
+    </entry>
+</feed>

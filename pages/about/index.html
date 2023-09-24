@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sebastian Schmidt</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- Enable responsiveness on mobile devices-->
+        <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+        <!-- Author -->
+        <meta name="author" content="Sebastian Schmidt">
+
+        <!-- Summary / description -->
+        
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://sebastian-schmidt.me/main.css">
+
+        <!-- Feeds -->
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://sebastian-schmidt.me/atom.xml">
+
+        <!-- Google Analytics -->
+        
+
+        <script>
+            function setTheme() {
+                const time = new Date();
+
+                const prev = localStorage.getItem('date');
+                const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+                const now = time.getTime();
+                let sunrise;
+                let sunset;
+
+                function setBodyClass() {
+                    if (now > sunrise && now < sunset) return;
+                    document.body.classList.add('dark');
+                }
+
+                if (date !== prev) {
+                    // fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+                    //     .then(res => res.json())
+                    //     .then(data => {
+                    //         sunrise = data.sunrise.split(':').map(Number);
+                    //         sunset = data.sunset.split(':').map(Number);
+                    // })
+                    // .catch(() => {
+                        sunrise = [7, 0];
+                        sunset = [19, 0];
+                    // })
+                    // .finally(() => {
+                        sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+                        sunset = time.setHours(sunset[0], sunset[1], 0);
+                        setBodyClass();
+                        localStorage.setItem('sunrise', sunrise);
+                        localStorage.setItem('sunset', sunset);
+                    // });
+                    localStorage.setItem('date', date);
+                } else {
+                    sunrise = Number(localStorage.getItem('sunrise'));
+                    sunset = Number(localStorage.getItem('sunset'));
+                    setBodyClass();
+                }
+            }
+        </script>
+    </head>
+
+    <body class="single">
+
+    <!-- Apply theme -->
+    <script>
+      setTheme();
+    </script>
+
+    
+        <header class="header">
+            <nav class="nav">
+                
+                <p class="logo"><a href="https://sebastian-schmidt.me">Sebastian Schmidt</a></p>
+                
+                <ul class="menu">
+                    
+                    <li><a href="&#x2F;pages&#x2F;about">About</a></li>
+                    
+                    <li><a href="&#x2F;pages&#x2F;contact">Contact</a></li>
+                    
+                    <li><a href="&#x2F;pages&#x2F;projects">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title"></h1>
+        <div class="post-meta">
+            <span class="post-author">Author: Sebastian Schmidt</span>
+            <br/>
+            <span class="post-date">Published: <time>October  5, 2021</time></span>
+            <span>&middot;</span>
+            <span class="post-reading-time">1 min read</span>
+        </div>
+    </header>
+    <div class="post-content"><div style="height: 200px">
+    <img src='/images/profile.png' alt='Sebastian Schmidt' width='200' height='200' style='margin: 0 auto;border-radius: 50%'>
+</div>
+<div class="reveal">
+  <h1>Hello, I'm Sebastian.</h1>
+  <p>I'm an Australian developer working with open-source software. I believe websites should be fast for everyone, simple, secure and not evade the privacy of it's users. I intend to make the web a safer place one website at at time, following the industry's best practices.</p>
+<p>My open sourced and contributed projects are available on <a href="https://github.com/publicarray/">Github</a>. If you prefer you can also check out a nicer looking <a href="https://resume.github.io/?publicarray">résumé representation of my Github profile</a>.</p>
+</div>
+</div>
+    <footer class="post-footer">
+        
+    </footer>
+</article>
+
+        </main>
+
+        <!-- <footer class="footer">
+            <span>&copy; 2023 <a href="https://sebastian-schmidt.me">Sebastian Schmidt</a></span>
+            <span>&middot;</span>
+            <span>Powered by <a href="https://www.getzola.org" rel="noopener" target="_blank">Zola</a>️</span>
+            <span>&middot;</span>
+            <span>Theme️ <a href="https://github.com/schoenenberg/zola-paper" rel="noopener" target="_blank">Zola-Paper</a></span>
+        </footer> -->
+    
+    </body>
+</html>
